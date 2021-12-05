@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>OpenBoard</title>
+  </head>
+  <body>
+
+    <div class="night-mode">
+        Day-Mode
+    </div>
+
+    <div class="options-container">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="tools-container scale-tools">
+      <img class="pencil" src="public/Icons/Pencil.svg" alt="" />
+      <img class="eraser" src="public/Icons/Eraser.svg" alt="" />
+      <img class="download" src="public/Icons/Download.svg" alt="" />
+      <img class="upload" src="public/Icons/Upload.svg" alt="" />
+      <img class="sticky" src="public/Icons/StickyNote.svg" alt="" />
+      <img class="undo" src="public/Icons/Undo.svg" alt="" />
+      <img class="redo" src="public/Icons/Redo.svg" alt="" />
+    </div>
+
+
+    <div class="pencil-tool-container">
+      <div class="pencil-width-container">
+        <input type="range" min="1" max="10" value="2" class="pencil-width" />
+      </div>
+      <div class="pencil-color-container">
+          <div class="pencil-color red"></div>
+          <div class="pencil-color blue"></div>
+          <div class="pencil-color black"></div>
+      </div>
+    </div>
+
+
+    <div class="eraser-tool-container">
+        <input type="range" min="1" max="10" value="2" class="eraser-width"/>
+    </div>
+
+    <!-- <div class="sticky-container">
+        <div class="sticky-container-header">
+            <div class="sticky-container-header-id">12</div>
+            <div class="sticky-container-header-feature">
+                <div class="minimize">⛔</div>
+                <div class="remove">❎</div>
+            </div>
+            
+        </div>
+        <div class="sticky-container-body">
+            <textarea placeholder="write your notes here"></textarea>
+        </div>
+    </div> -->
+
+
+    <div class="sticky-notes-bar">
+        <!-- <div class="note-bar">Note</div> -->
+    </div>
+
+    <div id='ct7' class="Time-and-Date">
+      <span class="Date"></span>
+      <span class="Time"></span>
+    </div>
+
+    <canvas></canvas>
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
